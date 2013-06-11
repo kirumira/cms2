@@ -1,0 +1,38 @@
+<?php
+
+$url = 'http://www.wp.pl';
+$handle = curl_init($url);
+curl_setopt($handle,  CURLOPT_RETURNTRANSFER, TRUE);
+
+/* Get the HTML or whatever is linked in $url. */
+$response = curl_exec($handle);
+
+/* Check for 404 (file not found). */
+$httpCode = curl_getinfo($handle, CURLINFO_HTTP_CODE);
+
+echo $httpCode;
+
+curl_close($handle);
+
+array(
+	"username"=>"cd1-cranemgtsys",
+	"password"=>"cms123",
+	"type"=>"0", 
+	"dlr"=>"1", 
+	"destination"=>tn_4n.replace(/-/g,''), 
+	"source"=>"CMS", 
+    "message"=>"Your Cheque; cheque Number: "+chq_no+" of amount: "+amount+" has been bounced and a penalty of "+chq_pn+" has been imposed on you.");
+
+
+?>
+
+url: "http://121.241.242.114:8080/bulksms/bulksms?",
+                                                data:{
+                                                    username:"cd1-cranemgtsys",
+                                                    password:"cms123",
+                                                    type:"0",
+                                                    dlr:"1", 
+                                                    //destination:telephone.replace(/-/g,'')+",256702604010", 
+                                                    destination:tn_4n.replace(/-/g,''), 
+                                                    source:"CMS", 
+                                                    message:"Your Cheque; cheque Number: "+chq_no+" of amount: "+amount+" has been bounced and a penalty of "+chq_pn+" has been imposed on you."},

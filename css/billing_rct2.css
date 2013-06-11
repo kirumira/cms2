@@ -1,0 +1,55 @@
+/* 
+    Document   : billing_receipt
+    Created on : Nov 20, 2012, 7:15:09 PM
+    Author     : Timmy
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+body{
+    background: white;
+    font-size: 8pt;
+    font-family: "Courier New", Courier, monospace;
+}
+table{
+   font-size: 11pt;
+   width: 100%;
+}
+th{
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px double black;
+    border-top: 1px double black;
+    padding: 6px 2px 6px 2px;
+
+}
+td{    
+    padding: 4px 2px 4px 2px;
+    
+}
+.b_right{
+    border-right:1px double black;
+    text-align: center;
+}
+
+.receipt_header,.receipt_header2{
+    text-align: center;
+    width: 100%;
+}
+#receipt{
+   width:660px;
+   display:block;
+}
+#receipt2{
+   width:660px;
+   display:block;
+}
+
